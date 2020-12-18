@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <h1> My Family Book</h1>
+        <hr style="width: 100%;">
+        <div>
+        <img id="images" src="my-funny-family-2.jpg" height="400" width="400">
+        <h3 id="names">My Family Book</h3>
+        <br>
+       <button type="button" onclick="nextslide()"> Next </button>
+       <script>
+           var album=[
+               "https://rlv.zcache.com/fathers_day_cartoon_dad_funny_quote_in_biggest_card-r1a3c8d7d59284f288bd0b04ecc394d50_6dewf_704.jpg?rlvnet=1",
+               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsyuGkz-NDd7jYsV7hPdz0mnLIEX1IafuNeg&usqp=CAU",
+               "https://i.pinimg.com/originals/8c/7d/d0/8c7dd0f42f92e48aba9da6ea8e92ebb8.png",
+               "https://t1.thpservices.com/previewimage/gallil/194e6f5ee074cac2cd2ea1be9bc03736/esy-044609804.jpg",
+               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUg2vuPHjiuWM0GORZ97U31Mj8voBn8O1f_A&usqp=CAU",    
+           ];
+           var names=[
+               "Vikram Sachdeva",
+               "Kamya Sachdeva",
+               "Tanishka Sachdeva",
+               "Navya Sachdeva",
+               "And That's My Loving Family",
+           ];
+           
+            
+            
+          
+           var i=0;
+           function nextslide(){
+           document.getElementById("images").src=album[i];
+           document.getElementById("names").innerHTML=names[i];
+           i++;
+           if (i == 4){
+            i=0;
+           }
+           }
+          
+       </script>
+    </div>
+    </body>
+</html>
